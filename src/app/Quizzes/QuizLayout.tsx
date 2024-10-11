@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import OptionButton from "../Common/Mobile/Components/OptionButton";
 import { QuizLayoutProps } from "../Common/types";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 
 export default function QuizLayout({
   selectedQuiz,
@@ -49,7 +48,6 @@ export default function QuizLayout({
   };
 
   if (quizFinished) {
-  const router = useRouter();
 
     return (
       <>
@@ -84,7 +82,6 @@ export default function QuizLayout({
               </div>
             </div>
             <button
-              onClick={() => router.push("/")}
               className="bg-[#A729F5] rounded-xl h-[56px] text-[#fff] font-medium md:w-[594px] lg:w-[564px] sm:w-[564px]"
             >
               Play Again
