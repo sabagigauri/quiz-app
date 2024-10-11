@@ -49,8 +49,7 @@ export default function QuizLayout({
   };
 
   if (quizFinished) {
-
-    const router = useRouter();
+  const router = useRouter();
 
     return (
       <>
